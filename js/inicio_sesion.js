@@ -5,7 +5,7 @@ function validar(formulario) {
 	var validacion = false;
 
 	if (!re.test(registro.correo.value)) {
-		document.getElementById("errorEmail").innerHTML = "Email invalido";
+		document.getElementById("errorEmail").innerHTML = "invalid email";
 		validacion = false;
 	} else {
 		document.getElementById("errorEmail").style.display = "none";
@@ -14,7 +14,7 @@ function validar(formulario) {
 
 	if (registro.contrasena.value.trim().length < 8) {
 		document.getElementById("errorContrasena").innerHTML =
-			"Contraseña invalida, minimo 8 caracteres";
+			"invalid password, minimum 8 characters";
 		validacion = false;
 	} else {
 		document.getElementById("errorContrasena").style.display = "none";
@@ -22,6 +22,6 @@ function validar(formulario) {
 	}
 
 	if (validacion == true) {
-		alert("Haz Iniciado sesion!");
+		alert("logged in!");
 	}
 }
