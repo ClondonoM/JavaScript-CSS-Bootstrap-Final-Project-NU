@@ -77,7 +77,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<h5 class="modal-title" id="exampleModalLabel">
-							Contacto
+							Contact
 						</h5>
 						<button
 							type="button"
@@ -112,7 +112,7 @@
 			<h1>Register</h1>
 
 			<div class="form-group">
-				<label for="correo">Correo electronico *</label>
+				<label for="correo">email * </label>
 				<span class="text-danger" id="errorEmail"></span><br />
 
 				<input
@@ -125,7 +125,7 @@
 			</div>
 
 			<div class="form-group">
-				<label for="contrasena">Contraseña*</label>
+				<label for="contrasena">Password * </label>
 				<span class="text-danger" id="errorContrasena"></span><br />
 
 				<input
@@ -138,9 +138,7 @@
 			</div>
 
 			<div class="form-group">
-				<label for="conf_contrasena"
-					>Confirmacion de contraseña *</label
-				>
+				<label for="conf_contrasena">Confirm password * </label>
 				<span class="text-danger" id="errorConfContrasena"></span><br />
 
 				<input
@@ -153,27 +151,25 @@
 			</div>
 
 			<div class="form-group">
-				<label for="genero_musical">Genero musical favorito *</label>
+				<label for="genero_musical">Favorite music genre * </label>
 				<span class="text-danger" id="errorGenero"></span><br />
 
 				<select class="form-control" id="genero_musical">
-					<option value="seleccione" disabled selected>
-						Seleccione
-					</option>
+					<option value="seleccione" disabled selected>Select</option>
 					<option value="rock">Rock</option>
 					<option value="balada">Balada</option>
 					<option value="salsa">Salsa</option>
-					<option value="otro">Otro</option></select
+					<option value="otro">Other</option></select
 				><br />
 			</div>
 
 			<div class="form-check">
 				<label class="form-check-label" for="edad"
-					><h5>Edad*</h5></label
+					><h5>Age *</h5></label
 				>
 				<span class="text-danger" id="errorEdad"></span><br />
 				<label class="form-check-label" for="menor_de_20"
-					>Menor de 20</label
+					>Under 20</label
 				>
 				<input
 					class="form-check-input"
@@ -182,7 +178,7 @@
 					value="menor_de_20"
 				/>
 				<br />
-				<label class="form-check-label" for="20_a_40">20 a 40</label>
+				<label class="form-check-label" for="20_a_40">20 to 40</label>
 				<input
 					class="form-check-input"
 					type="radio"
@@ -190,7 +186,7 @@
 					value="20_a_40"
 				/><br />
 				<label class="form-check-label" for="mayor_de_50"
-					>Mayor de 50</label
+					>Over 50</label
 				>
 				<input
 					class="form-check-input"
@@ -202,7 +198,7 @@
 			<br />
 
 			<div class="form-check">
-				<label for="condiciones">Acepto los terminos de uso*</label>
+				<label for="condiciones">I accept the terms of use *</label>
 				<span class="text-danger" id="errorTerminos"></span>
 				<input
 					class="form-check-input"
@@ -214,14 +210,14 @@
 				<br />
 			</div>
 
-			<p>Campos obligatorios*</p>
+			<p>Required fields *</p>
 			<br />
 			<button
 				class="btn btn-primary"
 				type="button"
 				onclick="return validar(this.form)"
 			>
-				Continuar
+				Register
 			</button>
 		</form>
 
