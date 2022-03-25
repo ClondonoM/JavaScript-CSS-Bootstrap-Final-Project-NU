@@ -14,7 +14,7 @@ function validar(formulario) {
 
 	if (registro.contrasena.value.trim().length < 8) {
 		document.getElementById("errorContrasena").innerHTML =
-			"invalid password, minimum 8 characters";
+			" invalid password, minimum 8 characters";
 		validacion = false;
 	} else {
 		document.getElementById("errorContrasena").style.display = "none";
