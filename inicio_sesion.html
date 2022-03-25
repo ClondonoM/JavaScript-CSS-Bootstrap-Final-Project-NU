@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OYE por Carlos Londoño</title>
+		<meta charset="utf-8" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/estilos.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="mb-5">
+			<nav
+				class="navbar navbar-expand-md fixed-top navbar-dark bg-primary"
+			>
+				<div class="container-fluid">
+					<a class="navbar-brand oye" href="index.html">
+						<img src="imagenes/logo.png" rel="stylesheet" />
+						<h1 class="titulo_logo">OYE</h1>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarCollapse"
+						aria-controls="navbarCollapse"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav me-auto mb-2 mb-md-0">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="registro.html"
+									>Registro</a
+								>
+							</li>
+						</ul>
+
+						<ul class="d-flex navbar-nav me-auto mb-2 mb-md-0">
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									data-bs-toggle="modal"
+									data-bs-target="#contacto"
+									>Contacto</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									href="inicio_sesion.html"
+									>Inicio de sesion</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="canciones.html"
+									>Canciones</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div
+			class="modal fade"
+			id="contacto"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">
+							Contacto
+						</h5>
+						<button
+							type="button"
+							class="close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<p>Carlos Alberto Londoño</p>
+						<br />
+						<p>carlos_alm@yahoo.com</p>
+					</div>
+
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							OK
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<form id="registro">
+			<div class="mb-3">
+				<label for="correo" class="form-label">Correo</label>
+				<span class="text-danger" id="errorEmail"></span>
+				<input
+					type="text"
+					class="form-control"
+					id="correo"
+					placeholder="Coloque su correo electronico"
+				/>
+			</div>
+			<div class="mb-3">
+				<label for="contrasena" class="form-label">Contraseña</label
+				><span class="text-danger" id="errorContrasena"></span>
+				<input
+					type="text"
+					class="form-control"
+					id="contrasena"
+					placeholder="Coloque su contraseña"
+				/>
+			</div>
+
+			<button
+				class="btn btn-primary"
+				type="button"
+				onclick="return validar(this.form)"
+			>
+				Continuar
+			</button>
+		</form>
+
+		<section class="pie">
+			<div class="container-fluid">
+				<footer
+					class="d-flex justify-content-between align-items-center p-2"
+				>
+					<p class="col justify-content-start ps-3">
+						Comparte la musica
+					</p>
+					<p class="coljustify-content-end pe-3">
+						&copy 2022 Derechos reservados
+					</p>
+				</footer>
+			</div>
+		</section>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/inicio_sesion.js"></script>
+	</body>
+</html>
