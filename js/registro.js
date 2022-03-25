@@ -4,7 +4,7 @@ function validar(formulario) {
 	var validacion = false;
 
 	if (!re.test(registro.correo.value)) {
-		document.getElementById("errorEmail").innerHTML = "Email invalido";
+		document.getElementById("errorEmail").innerHTML = "invalid email";
 		validacion = false;
 	} else {
 		document.getElementById("errorEmail").style.display = "none";
@@ -13,7 +13,7 @@ function validar(formulario) {
 
 	if (registro.contrasena.value.trim().length < 8) {
 		document.getElementById("errorContrasena").innerHTML =
-			"Contraseña invalida, minimo 8 caracteres";
+			"invalid password, minimum 8 characters";
 		validacion = false;
 	} else {
 		document.getElementById("errorContrasena").style.display = "none";
@@ -22,7 +22,7 @@ function validar(formulario) {
 
 	if (registro.contrasena.value != registro.conf_contrasena.value) {
 		document.getElementById("errorConfContrasena").innerHTML =
-			"Confirmacion de contraseña no coincide";
+			"passwords do not match";
 
 		validacion = false;
 	} else {
@@ -32,7 +32,7 @@ function validar(formulario) {
 
 	if (registro.genero_musical.value == "seleccione") {
 		document.getElementById("errorGenero").innerHTML =
-			"Debes seleccionar un genero";
+			"you must select a musical genre";
 		validacion = false;
 	} else {
 		document.getElementById("errorGenero").style.display = "none";
@@ -41,7 +41,7 @@ function validar(formulario) {
 
 	if (!document.querySelector('input[name="edad"]:checked')) {
 		document.getElementById("errorEdad").innerHTML =
-			"Debes seleccionar un rango de edad";
+			"you must select an age range";
 		validacion = false;
 	} else {
 		document.getElementById("errorEdad").style.display = "none";
@@ -50,7 +50,7 @@ function validar(formulario) {
 
 	if (!document.querySelector('input[name="condiciones"]:checked')) {
 		document.getElementById("errorTerminos").innerHTML =
-			"Debes aceptar los terminos y condiciones";
+			"you must agree to terms and conditions";
 		validacion = false;
 	} else {
 		document.getElementById("errorTerminos").style.display = "none";
@@ -59,6 +59,6 @@ function validar(formulario) {
 
 	console.log(validacion);
 	if (validacion == true) {
-		alert("Haz logrado tu registro con exito!");
+		alert("you have achieved your registration successfully!");
 	}
 }
